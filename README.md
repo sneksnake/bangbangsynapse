@@ -6,7 +6,7 @@ A tool for create scripts for Roblox using synapse X
 - Attach to Roblox (using Synapse's WebSocket server)
 - Execute script
 - Output logging
-- List remots (RemoteFunctions, RemoteEvents)
+- List remotes (RemoteFunctions, RemoteEvents)
 - List network owned instances
 - Search function by name
 - Search function by constant

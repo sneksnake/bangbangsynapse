@@ -2,7 +2,15 @@
   "name": "bangbang-synapse",
   "displayName": "BangBang Synapse X",
   "description": "Roblox executor and more for Synapse X",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "author": "Snek",
+  "publisher": "Snek",
+  "icon": "logo.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sneksnake/bangbangsynapse"
+  },
   "engines": {
     "vscode": "^1.71.0"
   },
