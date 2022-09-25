@@ -1,0 +1,79 @@
+{
+  "name": "bangbang-synapse",
+  "displayName": "BangBang Synapse X",
+  "description": "Roblox executor and more for Synapse X",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:bangbang-synapse.attach",
+    "onCommand:bangbang-synapse.executeCode",
+    "onCommand:bangbang-synapse.searchFuncWithName",
+    "onCommand:bangbang-synapse.searchFuncWithConst",
+    "onCommand:bangbang-synapse.getNetworking",
+    "onCommand:bangbang-synapse.getOwned",
+    "onCommand:bangbang-synapse.decompileScript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "bangbang-synapse.attach",
+        "title": "BangBangSynapse: Attach to Roblox"
+      },
+      {
+        "command": "bangbang-synapse.executeCode",
+        "title": "BangBangSynapse: Execute code"
+      },
+      {
+        "command": "bangbang-synapse.searchFuncWithName",
+        "title": "BangBangSynapse: Search function with name"
+      },
+      {
+        "command": "bangbang-synapse.searchFuncWithConst",
+        "title": "BangBangSynapse: Search function with const"
+      },
+      {
+        "command": "bangbang-synapse.getNetworking",
+        "title": "BangBangSynapse: Get remotes"
+      },
+      {
+        "command": "bangbang-synapse.getOwned",
+        "title": "BangBangSynapse: Get owned instances"
+      },
+      {
+        "command": "bangbang-synapse.decompileScript",
+        "title": "BangBangSynapse: Decompile script"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.71.0",
+    "@typescript-eslint/eslint-plugin": "^5.31.0",
+    "@typescript-eslint/parser": "^5.31.0",
+    "@vscode/test-electron": "^2.1.5",
+    "eslint": "^8.20.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@types/ws": "^8.5.3",
+    "ws": "^8.9.0"
+  }
+}
